@@ -1,4 +1,3 @@
-
 # My Face Recognition Backend
 
 <span style="color:red">**This README is a work in progress!**</span>
