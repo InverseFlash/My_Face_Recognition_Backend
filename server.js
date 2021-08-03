@@ -23,7 +23,7 @@ const db = knex({
   },
 });
 
-app.get("/", (_, res) => res.json("Server has been started"));
+app.get("/", (_, res) => res.send("Server has been started"));
 app.post("/signin", (req, res) => signin.handleSignIn(req, res, db, bcrypt));
 app.post("/register", (req, res) =>
   register.handleRegister(req, res, db, bcrypt)
