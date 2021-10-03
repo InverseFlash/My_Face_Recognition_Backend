@@ -11,12 +11,12 @@ const app = express();
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
-var corsOptions = {
-  origin: "*",
-  allowedHeaders: "Content-Type",
-  optionsSuccessStatus: 200,
-};
-app.use(cors(corsOptions));
+// var corsOptions = {
+//   origin: "*",
+//   allowedHeaders: "Content-Type",
+//   optionsSuccessStatus: 200,
+// };
+app.use(cors());
 
 const db = knex({
   client: "pg",

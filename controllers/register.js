@@ -1,7 +1,7 @@
 const handleRegister = (req, res, db, bcrypt) => {
   const { email, name, password } = req.body;
-  if (!email || !name || !password){
-    return res.status(400).json('Incorrect form submission');
+  if (!email || !name || !password) {
+    return res.status(400).json("Incorrect form submission");
   }
   const saltRounds = 10;
   const hash = bcrypt.hashSync(password, saltRounds);
@@ -22,6 +22,7 @@ const handleRegister = (req, res, db, bcrypt) => {
             joined: new Date(),
           })
           .then((user) => {
+            // res.set("Access-Control-Allow-Headers", "Content-Type");
             res.json(user[0]);
           })
           .catch((_) => res.status(400).json("Unable to register"));

@@ -1,16 +1,14 @@
 # My Face Recognition Backend
 
-<span style="color:red">**This README is a work in progress!**</span>
-
-Hello! Thanks for stopping by.
+Hello!
 
 This is the backend companion to my repo 'My Face Recognition', a web app that takes an image as input, and runs it through a face detection machine learning model to predict/detect faces in the image.
 
 The web app is composed of 3 parts.
 
-- Front-End interface (@ repo 'My Face Recognition')
-- Back-End Server (this repo)
-- Postgresql database
+- Front-End interface -> [My_Face_Recognition](https://github.com/InverseFlash/My-Face-Recognition)
+- Back-End Server -> this repo
+- Postgresql database -> hosted on Heroku Cloud
 
 ## How to use
 
